@@ -1,0 +1,6 @@
+.container {
+  justify-content: space-between;
+}
+.container > img {
+  width: 9rem;
+}

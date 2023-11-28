@@ -1,0 +1,81 @@
+.rContainer {
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.rHead {
+  margin-bottom: 2rem;
+}
+.rCard {
+  gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: auto;
+  transition: all 300ms ease-in;
+}
+.rCard > img {
+  width: 100%;
+  max-width: 14rem;
+  border-radius: 10px;
+}
+.rCard > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.rCard > :nth-child(3) {
+  font-size: 1.5rem;
+}
+.rCard > :nth-child(4) {
+  font-size: 0.7rem;
+  width: 15rem;
+}
+.rCard:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(225, 225, 225, 0) 0%,
+    rgba(136, 160, 225, 0.46) 217.91%
+  );
+  box-shadow: 0px 72px 49px -51px rgba(136, 160, 225, 0.21);
+}
+.rButtons {
+  position: absolute;
+  gap: 1rem;
+  top: -4rem;
+  right: 0;
+}
+.rButtons button {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+.rButtons > :nth-child(1) {
+  background-color: #eef;
+}
+.rButtons > :nth-child(2) {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 640px) {
+  .rHead {
+    align-items: center;
+  }
+  .rButtons {
+    position: initial;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+  .rCard > img {
+    width: 100%;
+    max-width: 17rem;
+  }
+}

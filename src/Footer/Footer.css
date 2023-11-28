@@ -1,0 +1,20 @@
+.fContainer {
+  justify-content: space-between;
+}
+.fLeft {
+  gap: 1rem;
+}
+.fMenu {
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .fContainer {
+    justify-content: center;
+  }
+  .fContainer > div {
+    align-items: center !important;
+    text-align: center;
+  }
+}
